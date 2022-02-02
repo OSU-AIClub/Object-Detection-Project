@@ -3,6 +3,7 @@ import torch.nn.functional as F
 
 # Source: https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
 
+# Define the Convolutional Neural Network
 class Net(nn.Module):
     def __init__(self):
         super().__init__()
