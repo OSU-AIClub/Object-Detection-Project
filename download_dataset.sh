@@ -9,7 +9,7 @@ else
     cd data/
 fi
 
-wget https://drive.google.com/u/1/uc?id=1HUpMP3zu8dwrFYyPObVwuAob-oJHh57K&export=download -O CrowdHumanDataset.zip
+wget -L https://oregonstate.box.com/shared/static/u4gnvq0cyksjz242ywuo66k9cechmyan -O CrowdHumanDataset.zip
 
 echo ""
 echo "Download Complete!"
