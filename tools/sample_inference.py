@@ -2,7 +2,7 @@ import torch
 
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
 
-imgs = ['images/P4-FEB-iStock-1352165307.jpg'] # batch of images
+imgs = ['../sample_images/P4-FEB-iStock-1352165307.jpg'] # batch of images
 
 results = model(imgs)
 
