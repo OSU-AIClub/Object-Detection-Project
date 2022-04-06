@@ -1,11 +1,10 @@
 import torch
-from matplotlib import pyplot as plt
 import numpy as np
 import cv2
 
 
 # Load prebuilt model (YOLO5)
-model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
+model = torch.hub.load('ultralytics/yolov5', 'yolov5s', force_reload=True)
 
 
 # Evaluate on live images from camera 
