@@ -1,3 +1,5 @@
+"""NOTE: This is only for sample inference on the COCO dataset using the pretrained YOLOv5 Model"""
+
 import torch
 
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
