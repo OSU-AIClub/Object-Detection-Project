@@ -15,6 +15,12 @@ Next, you need to install the dependencies, you can install the dependencies usi
 ```bash
 $ conda env create --file ped_detect.yml
 ```
+
+And finally, clone the yolov5 github repo as follows:
+```bash
+$ git clone https://github.com/ultralytics/yolov5.git
+```
+
 And you should be all set!
 
 # Project Organization
@@ -41,6 +47,8 @@ This project is organized as follows:
 │   └── **ALL TRAINING AND TESTING SCRIPTS GO HERE**
 ├── deployment/
 │   └── **ALL OPEN-CV INFERENCE FILES GO HERE**
+├── yolov5/
+│   └── **CLONED GITHUB REPO GOES HERE**
 ├── download_dataset.sh
 ├── ped_detect.yml (conda environment)
 ├── README.md

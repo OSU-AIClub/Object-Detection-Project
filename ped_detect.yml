@@ -112,5 +112,4 @@ dependencies:
   - zstd=1.4.9=haebb681_0
   - pip:
     - opencv-python==4.5.5.64
-    - git+https://github.com/n8srumsey/yolov5
 prefix: /home/n8srumsey/miniconda3/envs/ped_detect

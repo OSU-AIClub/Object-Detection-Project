@@ -1,0 +1,11 @@
+# Dataset Location
+path: ../data/YOLOv5_CrowdHuman
+
+# Dataset Splits
+train: images/train
+val: images/val
+test: images/test
+
+# Class Information
+nc: 2
+names: [ 'person', 'mask' ] # Class Names
