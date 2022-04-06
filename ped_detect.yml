@@ -143,5 +143,4 @@ dependencies:
     - tensorboard==2.8.0
     - tensorboard-data-server==0.6.1
     - tensorboard-plugin-wit==1.8.1
-    - wandb==0.12.12
 prefix: /home/n8srumsey/miniconda3/envs/ped_detect

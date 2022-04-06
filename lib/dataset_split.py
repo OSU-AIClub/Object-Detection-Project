@@ -130,4 +130,12 @@ def generate_dataset_split(dataset_path:str, val_split=0.10, test_split=0.20):
     return
 
 if __name__ == "__main__":
-    generate_dataset_split("../data/YOLOv5_CrowdHuman/")
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate train, val, and test splits for a YOLOv5 dataset")    
+    parser.add_argument('--data', type=str, default="../data/YOLOv5_CrowdHuman/")
+    parser.add_argument('--val-split', type=float, default=0.1)
+    parser.add_argument('--test-split', type=float, default=0.2)
+
+    args = parser.parse_args()
+
+    generate_dataset_split(args.data, args.val_split, args.test_split)
