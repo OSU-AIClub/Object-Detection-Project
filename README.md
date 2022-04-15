@@ -37,7 +37,9 @@ Before training, I recommend that you recreate the dataset splits to ensure rand
 cd ./lib/
 python dataset_split.py
 ```
-**First time running? You must use the following command to create the splits**
+**First time running? You must use the above command to create the splits**
+
+
 
 Training is simple. Change into the tools directory, and then run the `train.sh` script.
 
