@@ -44,6 +44,7 @@ python dataset_split.py
 Training is simple. Change into the tools directory, and then run the `train.sh` script.
 
 ```bash
+$ cd tools
 $ bash train.sh
 ```
 
