@@ -32,9 +32,19 @@ $ git clone https://github.com/ultralytics/yolov5.git
 And you should be ready!
 
 ## Training
+Before training, I recommend that you recreate the dataset splits to ensure randomness. You can modify the default split amounts in the code of the python file.
+```bash
+cd ./lib/
+python dataset_split.py
+```
+**First time running? You must use the above command to create the splits**
+
+
+
 Training is simple. Change into the tools directory, and then run the `train.sh` script.
 
 ```bash
+$ cd tools
 $ bash train.sh
 ```
 
