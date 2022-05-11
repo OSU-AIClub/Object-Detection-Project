@@ -26,4 +26,5 @@ then
 else
     unzip CrowdHumanDataset.zip
     echo "Successfully unziped dataset!"
+    cd ..
 fi
