@@ -3,14 +3,7 @@ import cv2
 from stable_detections import average_detections
 
 
-BBOX_COLOR = (255,0,0)              # B, G, R
-COUNT_COLOR = (0,0, 255)            # B, G, R
-CONFIDENCE_COLOR = (255,255,255)    # B, G, R
-
-FONT = cv2.FONT_HERSHEY_SIMPLEX
-FONT_SIZE = 0.5
-TEXT_THICKNESS = 1
-
+from config import COUNT_COLOR, BBOX_COLOR, CONFIDENCE_COLOR, FONT, FONT_SIZE, TEXT_THICKNESS
 
 def display_count(image, count):
     width = image.shape[1]

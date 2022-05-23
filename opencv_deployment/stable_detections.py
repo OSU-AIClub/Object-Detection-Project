@@ -3,8 +3,7 @@ import time
 import pandas as pd
 
 
-AVERAGE_WINDOW = 10     # in seconds
-
+from config import AVERAGE_WINDOW
 
 def create_detection_df():
     cols = ['time', 'n_detected']
@@ -31,7 +30,5 @@ def add_detection(df, n_detected):
 
 def average_detections(df):
     mean_detected = df['n_detected'].mean()
-
-    print(f"{round(mean_detected)}: {mean_detected}")
 
     return round(mean_detected)
