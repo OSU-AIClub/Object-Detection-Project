@@ -1,0 +1,8 @@
+name: deployment
+channels:
+  - defaults
+dependencies:
+  - cudatoolkit=11.3
+  - pytorch
+  - seaborn
+prefix: /home/n8srumsey/miniconda3/envs/deployment
