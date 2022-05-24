@@ -17,7 +17,7 @@ $ sh install_dependencies.sh
 
 And now you should be ready!
 
-## Runnings
+## Running
 If you haven't already, be sure to change into the deployment directory:
 ```bash
 $ cd ./opencv_deployment/
