@@ -1,7 +1,5 @@
 # Object-Detection-Project
-The OSU Artificial Intelligence club started this project Winter Term 2022.The goal of this project is to count the amount of people in Kelley Engineering Center using the YOLOv5 model architecture
-
-Current files in the tutorial repository are from: https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
+The OSU Artificial Intelligence club started this project Winter Term 2022.The goal of this project is to count the amount of people detected by a camera using the YOLOv5 model architecture.
 
 #  Deployment Demo
 ## Setup
