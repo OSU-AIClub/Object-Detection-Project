@@ -25,7 +25,7 @@ cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
 
 # Uncomment to Evaluate on Images from Video
-cap = cv2.VideoCapture("stock_video.mp4")
+# cap = cv2.VideoCapture("stock_video.mp4")
 
 model = load_pretrained_yolo5()
 
@@ -36,8 +36,6 @@ root = tk.Tk()
 root.bind('<Escape>', lambda e: root.quit())
 lmain = tk.Label(root)
 lmain.pack()
-
-
 
 
 def show_frame():
@@ -81,14 +79,15 @@ def show_frame():
         plt.axis([None, None, 0, None])
         plt.savefig("freqency_graph.png")
     
+    # Stack Both Images on Top of Eachother
     cv2image1 = cv2.cvtColor(frame, cv2.COLOR_BGR2RGBA)
     image = cv2.imread('freqency_graph.png')
     cv2image2 = cv2.cvtColor(image, cv2.COLOR_BGR2RGBA)
     cv2image2 = cv2.resize(cv2image2, dsize=(cv2image1.shape[1], cv2image1.shape[0]), interpolation=cv2.INTER_AREA)
 
-
     cv2image = np.vstack((cv2image1, cv2image2))
 
+    # Draw both Images to the Frame
     img = Image.fromarray(cv2image)
     imgtk = ImageTk.PhotoImage(image=img)
     lmain.imgtk = imgtk
