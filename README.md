@@ -3,16 +3,16 @@ The OSU Artificial Intelligence club started this project Winter Term 2022.The g
 
 Current files in the tutorial repository are from: https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
 
-#  Custom Detection Model - Getting Started
+#  Deployment Demo
 ## Setup
 First, move into the deployment directory:
 ```bash
 $ cd ./opencv_deployment/
 ```
 
-Next, you must install the necessary packages. You can do so using the bash script provided.
+Next, you must install the necessary packages. You can do so using the following command.
 ```bash
-$ sh install_dependencies.sh
+$ pip install -r requirements.txt
 ```
 
 And now you should be ready!
@@ -48,7 +48,7 @@ FONT_SIZE = 0.5
 TEXT_THICKNESS = 1
 ```
 
-#  Custom Detection Model - Getting Started
+#  Custom Detection Model
 ## Setup
 First, you must download the Cityscapes dataset. You can download the the dataset using the `donwload_dataset.sh` script:
 ```bash
